@@ -1,0 +1,97 @@
+/* reuses login styles — just import Login.css base */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #eef2f7, #dfe9f3);
+}
+
+.login-card {
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.back-btn {
+  display: block;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #2b6cb0;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 16px;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  color: #1e4f8a;
+  transform: translateX(-3px);
+}
+
+.logo {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #2b6cb0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.login-btn:hover {
+  background: #1e4f8a;
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.signup-text span {
+  color: #2b6cb0;
+  cursor: pointer;
+}

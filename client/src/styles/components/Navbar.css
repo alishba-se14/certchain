@@ -1,0 +1,88 @@
+.navbar {
+  height: 65px;
+
+  /* 🔥 richer premium gradient */
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  /* ✨ depth */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LEFT SIDE (ICON + LOGO) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* MENU ICON */
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.menu-icon:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* LOGO */
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+
+  /* ✨ subtle glow */
+  background: linear-gradient(to right, #ffffff, #c7d2fe);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+/* RIGHT BUTTONS CONTAINER */
+.nav-right {
+  display: flex;
+  gap: 12px;
+}
+
+/* BUTTON STYLE */
+.nav-right button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+
+  transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER */
+.nav-right button:hover {
+  background: white;
+  color: #1e3a8a;
+
+  transform: translateY(-3px) scale(1.05);
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ACTIVE CLICK */
+.nav-right button:active {
+  transform: scale(0.95);
+}

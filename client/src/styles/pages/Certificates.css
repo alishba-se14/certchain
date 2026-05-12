@@ -1,0 +1,202 @@
+/* MAIN */
+.main {
+  padding: 30px;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  margin: 0 0 4px 0;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* UPLOAD BUTTON */
+.cert-upload-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.cert-upload-btn:hover {
+  background: #1d4ed8;
+}
+
+/* SEARCH + FILTER */
+.cert-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.cert-controls input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.cert-controls input:focus {
+  border-color: #2563eb;
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  color: #374151;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+/* TABLE CARD */
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 12px 14px;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+  padding: 14px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: #f9fafb;
+}
+
+/* STATUS BADGES */
+.cert-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cert-badge.verified {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.cert-badge.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.cert-badge.invalid {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ACTION BUTTONS */
+.cert-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.cert-actions button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.cert-actions button:hover {
+  background: #f3f4f6;
+}
+
+/* PAGINATION */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.pagination {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.pagination button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #374151;
+  transition: 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.pagination button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
